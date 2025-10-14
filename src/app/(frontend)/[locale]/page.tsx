@@ -43,6 +43,12 @@ async function getPage(locale: 'en' | 'ar') {
 							internal->{ title, metadata },
 					}
 				},
+				formFields[]{
+  label,
+  name,
+  type,
+  required
+},
 				_type == 'faq-list' => {
           sideNote {
             ...,

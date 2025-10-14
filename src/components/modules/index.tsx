@@ -39,7 +39,7 @@ const Benefits = dynamic(() => import('./Benefits'))
 const SingleTestimony = dynamic(() => import('./SingleTestimony'))
 const TestimonialList = dynamic(() => import('./TestimonialList'))
 const TestimonialListTwo = dynamic(() => import('./TestimonialListTwo'))
-
+const JobApplication = dynamic(() => import('./JobApplicationModule'))
 const MODULE_MAP = {
 	hero: Hero,
 	'hero.four': HeroFour,
@@ -74,6 +74,7 @@ const MODULE_MAP = {
 	'solutions-benefits': Benefits,
 	'testimonial-list': TestimonialList,
 	'testimonial-list-two': TestimonialListTwo,
+	'job-application': JobApplication,
 } as const
 
 export default async function Modules({
